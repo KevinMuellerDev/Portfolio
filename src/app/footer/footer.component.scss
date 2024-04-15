@@ -8,18 +8,19 @@ div.footer {
     color: white;
     padding: 0px 100px;
 
-    h1{
+    h1 {
         font-size: 48px;
     }
 
-    a{
+    a {
         position: absolute;
         left: 102px;
         top: 166px;
         color: white;
         text-decoration: none;
-        &:hover{
-            border-bottom: 1px solid #FF4747; 
+
+        &:hover {
+            border-bottom: 1px solid #FF4747;
         }
     }
 
