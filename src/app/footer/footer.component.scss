@@ -1,4 +1,5 @@
 div.footer {
+    position: relative;
     height: 291px;
     border-top: 4px solid #FA7902;
     display: flex;
@@ -6,6 +7,21 @@ div.footer {
     align-items: center;
     color: white;
     padding: 0px 100px;
+
+    h1{
+        font-size: 48px;
+    }
+
+    a{
+        position: absolute;
+        left: 102px;
+        top: 166px;
+        color: white;
+        text-decoration: none;
+        &:hover{
+            border-bottom: 1px solid #FF4747; 
+        }
+    }
 
     div.footer-content {
         width: 100%;
@@ -24,7 +40,8 @@ div.footer {
             img {
                 cursor: pointer;
                 transition: all 125ms ease-in-out;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.5) translateY(5px);
                 }
             }
