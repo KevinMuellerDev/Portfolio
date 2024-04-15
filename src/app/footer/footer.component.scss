@@ -7,7 +7,7 @@ div.footer {
     color: white;
     padding: 0px 100px;
 
-    div {
+    div.footer-content {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -15,6 +15,19 @@ div.footer {
 
         span {
             font-size: 23px;
+        }
+
+        div {
+            display: flex;
+            gap: 30px;
+
+            img {
+                cursor: pointer;
+                transition: all 125ms ease-in-out;
+                &:hover{
+                    transform: scale(1.5) translateY(5px);
+                }
+            }
         }
     }
 }
