@@ -1,0 +1,17 @@
+
+div.footer{
+    height: 291px;
+    border: 4px solid #FA7902;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0px 100px;
+    
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
