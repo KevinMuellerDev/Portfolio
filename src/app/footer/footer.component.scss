@@ -39,10 +39,11 @@ div.footer {
 
             img {
                 cursor: pointer;
+                transform-origin: top;
                 transition: all 125ms ease-in-out;
 
                 &:hover {
-                    transform: scale(1.5) translateY(5px);
+                    transform: scale(1.5);
                 }
             }
         }
