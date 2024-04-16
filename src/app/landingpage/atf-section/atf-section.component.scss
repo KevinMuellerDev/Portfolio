@@ -26,13 +26,12 @@ $header-height: 109px;
                 flex-direction: column;
                 
                 .name {
-                    margin: 0;
                     font-size: 96px;
                     font-weight: 700;
                 }
 
                 .job-description{
-                    margin-top: -48px;
+                    margin-top: -40px;
                     font-size: 58px;
                     font-weight: 400;
                     color: #FF4747;
@@ -58,9 +57,10 @@ $header-height: 109px;
 
         .shape {
             position: absolute;
-            top: calc(557.6px - $header-height);
-            left: 0;
-            width: 100vw;
+            top: calc(377.6px - $header-height);
+            left: -5px;
+            width: 100%;
+            height: 1080px;
         }
     }
 
