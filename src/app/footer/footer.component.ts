@@ -11,6 +11,8 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   links:string[] =['impressum','impressum','impressum']
+  isTarget:string = '';
+  imprint:string = 'imprint';
 
   linkToPage(index:number){
     window.location.href =`${this.links[index]}`;

@@ -1,0 +1,36 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: calc(100% - 200px);
+    height: 109px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    background-color: #141D2F;
+
+    div.navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 360px;
+
+        a {
+            position: relative;
+            font-size: 23px;
+            transition: color 75ms ease-in-out;
+
+            &:hover {
+                color: #FA7902;
+            }
+        }
+    }
+
+    .underline {
+        background-image: linear-gradient(#FF4747, #FF4747);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 55px 3px;
+    }
+}

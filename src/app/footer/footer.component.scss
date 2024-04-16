@@ -1,11 +1,11 @@
 div.footer {
-    position: relative;
+    position: sticky;
+    top: 0;
     height: 291px;
     border-top: 4px solid #FA7902;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     padding: 0px 100px;
     caret-color:rgba(0,0,0,0);
 
@@ -21,7 +21,10 @@ div.footer {
         text-decoration: none;
 
         &:hover {
-            border-bottom: 1px solid #FF4747;
+            background-image: linear-gradient(#FF4747, #FF4747);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 55px 2px;
         }
     }
 
@@ -50,4 +53,5 @@ div.footer {
             }
         }
     }
+
 }
