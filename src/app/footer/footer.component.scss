@@ -7,8 +7,8 @@ div.footer {
     @include flex(center,center);
     padding: 0px 100px;
 
-    h1 {
-        font-size: 48px;
+    .logo {
+        width: 300px;
     }
 
     a {
@@ -32,6 +32,7 @@ div.footer {
 
         span {
             font-size: 23px;
+            margin-left: -88px;
         }
 
         div {

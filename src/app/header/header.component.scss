@@ -10,6 +10,10 @@
     padding: 0px 100px;
     background-color: #141D2F;
 
+    .logo {
+        width: 300px;
+    }
+
     div.navbar {
         @include flex(space-between);
         width: 100%;
@@ -32,4 +36,5 @@
         background-position: bottom left;
         background-size: 55px 3px;
     }
+
 }

@@ -122,4 +122,16 @@ $header-height: 109px;
         height: 1080px;
     }
 
+    
+    .scrolldown{
+        position: absolute;
+        top: 624px;
+        right: 100px;
+        cursor: pointer;
+        animation:bounce 2.5s ease-in-out infinite;
+    }
+    @keyframes bounce {
+        0%{ transform: translateY(0); }
+        50%{ transform: translateY(-40px); }
+    }
 }
