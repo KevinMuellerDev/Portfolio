@@ -134,6 +134,7 @@ $header-height: 109px;
         right: 100px;
         cursor: pointer;
         animation:bounce 2.5s ease-in-out infinite;
+        z-index: 10;
     }
     @keyframes bounce {
         0%{ transform: translateY(0); }
