@@ -18,4 +18,8 @@ export class FooterComponent {
     window.location.href =`${this.links[index]}`;
   }
 
+  navigateHome(){
+    window.scrollTo(0 , document.body.scrollTop);
+  }
+
 }

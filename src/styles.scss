@@ -83,3 +83,9 @@ a{
     text-decoration: none;
     color: white;
 }
+
+@mixin flex($justify: flex-start, $align: flex-start){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

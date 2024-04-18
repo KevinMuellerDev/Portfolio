@@ -1,18 +1,22 @@
+@use './../../styles.scss' as *;
+
 .header {
     position: sticky;
     top: 0;
     z-index: 9999;
     width: calc(100% - 200px);
     height: 109px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(space-between, center);
     padding: 0px 100px;
     background-color: #141D2F;
 
+    .logo {
+        cursor: pointer;
+        width: 300px;
+    }
+
     div.navbar {
-        display: flex;
-        justify-content: space-between;
+        @include flex(space-between);
         width: 100%;
         max-width: 360px;
 
@@ -33,4 +37,5 @@
         background-position: bottom left;
         background-size: 55px 3px;
     }
+
 }

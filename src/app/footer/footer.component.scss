@@ -1,16 +1,16 @@
+@use './../../styles.scss' as *;
 div.footer {
     position: sticky;
     top: 0;
     height: 291px;
     border-top: 4px solid #FA7902;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center,center);
     padding: 0px 100px;
     
 
-    h1 {
-        font-size: 48px;
+    .logo {
+        cursor: pointer;
+        width: 300px;
     }
 
     a {
@@ -30,12 +30,11 @@ div.footer {
 
     div.footer-content {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(space-between,center);
 
         span {
             font-size: 23px;
+            margin-left: -88px;
         }
 
         div {

@@ -9,5 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './atf-section.component.scss'
 })
 export class AtfSectionComponent {
-
+  navigateToAbout(){
+    window.location.href="#about";
+  }
 }
