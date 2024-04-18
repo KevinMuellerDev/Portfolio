@@ -95,6 +95,11 @@ $header-height: 109px;
         a{
             font-size: 23px;
             font-weight: 400;
+            transition: all 75ms ease-in-out;
+
+            &:hover {
+                color: #FA7902;
+            }
         }
     }
 
