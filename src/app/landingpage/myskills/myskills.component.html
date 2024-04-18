@@ -1,1 +1,4 @@
-<p>myskills works!</p>
+<div *ngFor="let item of items; index as i;" >
+    <img src={{item.url}} alt={{item.title}}>
+    <span>{{item.title}}</span>
+</div>
