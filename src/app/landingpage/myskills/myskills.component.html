@@ -1,18 +1,6 @@
 <div class="skills-content">
-    <div class="skill-icons">
-        <div class="icon" *ngFor="let item of firstRow; index as i;" >
-            <img src={{item.url}} alt={{item.title}}>
-            <span>{{item.title}}</span>
-        </div>
-    </div>
-    <div class="skill-icons">
-        <div class="icon" *ngFor="let item of secondRow; index as i;" >
-            <img src={{item.url}} alt={{item.title}}>
-            <span>{{item.title}}</span>
-        </div>
-    </div>
-    <div class="skill-icons third">
-        <div class="icon" *ngFor="let item of thirdRow; index as i;" >
+    <div class="icon-section">
+        <div class="icon" *ngFor="let item of skills; index as i;">
             <img src={{item.url}} alt={{item.title}}>
             <span>{{item.title}}</span>
         </div>

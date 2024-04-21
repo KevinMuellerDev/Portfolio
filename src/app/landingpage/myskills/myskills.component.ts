@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './myskills.component.scss'
 })
 export class MyskillsComponent {
-  firstRow = [
+  skills = [
     {
       url: '/assets/img/icon/angular.svg',
       title: 'Angular'
@@ -25,10 +25,7 @@ export class MyskillsComponent {
     {
       url: '/assets/img/icon/html.svg',
       title: 'HTML'
-    }
-  ];
-
-  secondRow=[
+    },
     {
       url: '/assets/img/icon/firebase.svg',
       title: 'Firebase'
@@ -45,9 +42,6 @@ export class MyskillsComponent {
       url: '/assets/img/icon/restapi.svg',
       title: 'Rest-Api'
     },
-  ]
-
-  thirdRow=[
     {
       url: '/assets/img/icon/scrum.svg',
       title: 'Scrum'
@@ -56,7 +50,7 @@ export class MyskillsComponent {
       url: '/assets/img/icon/material.svg',
       title: 'Material design'
     }
-  ]
+  ];
 
 
 
