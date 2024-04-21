@@ -1,0 +1,39 @@
+.skills-content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    gap: 54px;
+}
+
+
+.skill-icons{
+    width: 100%;
+    max-width: 721px;
+    display: flex;
+    justify-content: space-between;
+
+    .icon{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 88px;
+
+        img{
+            transition: all 125ms ease-in-out;
+            transform: translateY(0px);
+        }
+        img:hover{
+
+            transform: translateY(-20px);
+        }
+    }
+}
+
+.third{
+    justify-content: flex-start;
+    gap: 123px;
+}
