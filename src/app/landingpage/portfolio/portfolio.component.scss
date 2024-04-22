@@ -1,0 +1,56 @@
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    height: 100vh;
+
+    .portfolio-header {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 109px;
+        width: 70%;
+
+        .portfolio-wrapper {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .divider-left {
+                background-color: #FF4747;
+                height: 4px;
+                min-width: 20px;
+                width: 100%;
+                max-width: 109px;
+            }
+
+            .divider-right {
+                background-color: #FF4747;
+                height: 4px;
+                width: 100%;
+                max-width: 485;
+            }
+
+            .headline {
+                padding: 0 40px;
+
+
+                h2 {
+                    font-size: 90px;
+                    font-weight: 700;
+                }
+
+            }
+        }
+
+
+
+        .headspan {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+    }
+}
