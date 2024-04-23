@@ -2,9 +2,6 @@
     display: flex;
     flex-direction: column;
     padding-left: 100px;
-    height: 100vh;
-    
-    
 
     .portfolio-header {
         position: absolute;
@@ -51,5 +48,14 @@
             justify-content: flex-start;
             width: 100%;
         }
+    }
+
+    .portfolio-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 160px;
+        margin: 400px 0 200px;
+        
     }
 }

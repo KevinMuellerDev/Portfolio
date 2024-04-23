@@ -1,0 +1,82 @@
+.project{
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+    overflow-x: hidden;
+
+    .project-picture{
+        width: 100%;
+        max-width: 620px;
+    }
+
+    .project-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 35px;
+        width: 100%;
+        max-width: 512px;
+
+        .description-text{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        h2{
+            font-size: 32px;
+            font-weight: 700;
+            color: #FF4747;
+        }
+
+        .techstack{
+            font-size: 23px;
+            font-weight: 400;
+            color: #FA7902;
+        }
+
+        .btn-project{
+            display: flex;
+            gap: 86px;
+            width: 100%;
+        }
+    }
+}
+
+.livetest-btn {
+    padding: 15px 30px;
+    background-color: #FF4747;
+    border-radius: 10px;
+    cursor: pointer;
+    transform-origin: top;
+    transition: background-color 75ms ease-in-out;
+    font-size: 23px;
+
+    &:hover {
+        background-color: #FA7902;
+    }
+
+    &:active {
+        background-color: white;
+        color: black;
+    }
+}
+
+.github-btn {
+    padding: 15px 30px;
+    border: 1px solid #FA7902;
+    border-radius: 10px;
+    cursor: pointer;
+    transform-origin: top;
+    transition: transform 75ms ease-in-out;
+    font-size: 23px;
+
+    &:hover {
+        background-color: #FA7902;
+    }
+
+    &:active {
+        background-color: white;
+        color: black;
+    }
+}
