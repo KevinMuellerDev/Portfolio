@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProjectData } from "./../../../interface/projectdata";
 
 @Component({
   selector: 'app-work-mirror',
@@ -8,6 +9,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './work-mirror.component.html',
   styleUrl: './work-mirror.component.scss'
 })
-export class WorkMirrorComponent {
 
+export class WorkMirrorComponent {
+  @Input() project!:ProjectData;
 }
+

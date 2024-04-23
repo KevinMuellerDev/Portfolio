@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProjectData } from "./../../../interface/projectdata";
 
 @Component({
   selector: 'app-work',
@@ -8,6 +9,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './work.component.html',
   styleUrl: './work.component.scss'
 })
-export class WorkComponent {
 
+export class WorkComponent {
+  @Input() project!:ProjectData;
 }

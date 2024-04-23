@@ -20,8 +20,12 @@
         </div>
     </div>
     <div class="portfolio-content">
-        <app-work></app-work>
-        <app-work-mirror></app-work-mirror>
-        <app-work></app-work>
+        @for (project of projects; track projects[i].title; let i = $index) {
+            @if (i % 2 === 0) {
+                <app-work [project]="projects[i]"></app-work>
+            } @else {
+                <app-work-mirror [project]="projects[i]"></app-work-mirror>
+            }
+        }
     </div>
 </div>
