@@ -3,7 +3,7 @@
     flex-direction: column;
     padding-left: 100px;
     height: 100vh;
-    overflow: hidden;
+    
     
 
     .portfolio-header {
@@ -14,6 +14,7 @@
         align-items: flex-end;
         padding-top: 109px;
         width: 70%;
+        overflow-x: hidden;
 
         .portfolio-wrapper {
             display: flex;

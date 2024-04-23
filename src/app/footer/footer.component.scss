@@ -6,6 +6,7 @@ div.footer {
     border-top: 4px solid #FA7902;
     @include flex(center,center);
     padding: 0px 100px;
+    overflow-x: hidden;
     
 
     .logo {

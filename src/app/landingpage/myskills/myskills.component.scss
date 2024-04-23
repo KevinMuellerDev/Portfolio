@@ -36,12 +36,13 @@ $header-height: 109px;
     }
 
     .my-skills-description {
-        position: absolute;
-        right: 0;
         display: flex;
         flex-direction: column;
-        width: 571px;
+        width: 100%;
+        max-width: 571px;
+        height: 315px;
         margin-top: -48px;
+        overflow-x: hidden;
 
         .skills-header {
             display: flex;

@@ -9,6 +9,7 @@
     @include flex(space-between, center);
     padding: 0px 100px;
     background-color: #141D2F;
+    overflow-x: hidden;
 
     .logo {
         cursor: pointer;
