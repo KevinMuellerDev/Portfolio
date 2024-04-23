@@ -1,11 +1,19 @@
 <div class="skills-content">
-    <div class="icon-section">
+    <div class="icon-section"
+    data-aos="zoom-in-right"
+    data-aos-delay="100"
+    data-aos-easing="ease-in-out"
+    data-aos-duration="750">
         <div class="icon" *ngFor="let item of skills; index as i;">
             <img src={{item.url}} alt={{item.title}}>
             <span>{{item.title}}</span>
         </div>
     </div>
-    <div class="my-skills-description">
+    <div class="my-skills-description"
+    data-aos="fade-left"
+    data-aos-delay="100"
+    data-aos-easing="ease-in-out"
+    data-aos-duration="750">
         <div class="skills-header">
             <h2>My skills</h2>
             <div class="divider"></div>
