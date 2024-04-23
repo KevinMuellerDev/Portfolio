@@ -3,12 +3,13 @@
     justify-content: flex-end;
     flex-direction: row-reverse;
     gap: 35px;
-    overflow-x: hidden;
-    height: min-content;
+    overflow: hidden;
+
 
     .project-picture{
         width: 100%;
         max-width: 620px;
+        
     }
 
     .project-description{
