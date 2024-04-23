@@ -17,7 +17,7 @@ export class ProjectdataService {
     },
     {
       title: "test",
-      stack: "JavaScript | HTML | CSS",
+      stack: "TypeScript | HTML | CSS",
       description: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
     }
   ]
