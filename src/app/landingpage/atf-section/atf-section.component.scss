@@ -110,6 +110,13 @@ $header-height: 109px;
         left: 0px;
     }
 
+    .shadowabout {
+        position: absolute;
+        top: 680px;
+        right: 0;
+        z-index: 10;
+    }
+
     .profile-full {
         position: absolute;
         top: calc(106px - $header-height);
