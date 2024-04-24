@@ -20,8 +20,8 @@
         </div>
     </div>
     <div class="portfolio-content">
-        @for (project of projects; track projects[i].title; let i = $index) {
-            @if (i % 2 === 0) {
+        @for (project of projects; track projects[i].title; let i = $index, right = $even) {
+            @if (right) {
                 <app-work [project]="projects[i]"></app-work>
             } 
             @else {

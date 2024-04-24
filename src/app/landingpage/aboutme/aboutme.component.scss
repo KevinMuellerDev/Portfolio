@@ -1,8 +1,9 @@
+@use './../../../styles.scss' as *;
+
 .aboutme {
     position: relative;
     height: 100vh;
-    display: flex;
-    align-items: center;
+    @include flex(flex-start, center);
     padding-left: 100px;
     overflow-x: hidden;
 
@@ -33,15 +34,12 @@
             }
 
             .personal-info {
-                display: flex;
-                justify-content: flex-end;
-                align-items: flex-start;
+                @include flex(flex-end, flex-start);
                 padding-left: 35px;
                 gap: 35px;
 
                 div {
-                    display: flex;
-                    justify-content: center;
+                    @include flex(center,flex-start);
                     min-width: 50px;
 
                     img {
@@ -65,8 +63,7 @@
 }
 
 .about-profile {
-    display: flex;
-    align-items: center;
+    @include flex(flex-start, center);
     margin-top: 56px;
     width: 100%;
     

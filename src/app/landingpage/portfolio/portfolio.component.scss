@@ -1,3 +1,4 @@
+@use'./../../../styles.scss' as *;
 .portfolio-section {
     display: flex;
     flex-direction: column;
@@ -6,16 +7,14 @@
     .portfolio-header {
         position: absolute;
         right: 0;
-        display: flex;
+        @include flex(flex-end, flex-end);
         flex-direction: column;
-        align-items: flex-end;
         padding-top: 109px;
         width: 70%;
         overflow-x: hidden;
 
         .portfolio-wrapper {
-            display: flex;
-            align-items: center;
+            @include flex(flex-start, center);
             width: 100%;
 
             .divider-left {
@@ -44,16 +43,14 @@
         }
 
         .headspan {
-            display: flex;
-            justify-content: flex-start;
+            @include flex();
             width: 100%;
         }
     }
 
     .portfolio-content{
-        display: flex;
+        @include flex(flex-start, center);
         flex-direction: column;
-        align-items: center;
         gap: 160px;
         margin: 400px 0 200px;
         padding-right: 100px;

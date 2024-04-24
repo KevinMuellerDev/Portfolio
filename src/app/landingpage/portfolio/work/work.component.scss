@@ -1,6 +1,6 @@
+@use'./../../../../styles.scss' as *;
 .project{
-    display: flex;
-    justify-content: flex-end;
+    @include flex(flex-end, flex-end);
     gap: 35px;
     overflow: hidden;
 
@@ -10,9 +10,8 @@
     }
 
     .project-description{
-        display: flex;
+        @include flex(flex-end, flex-end);
         flex-direction: column;
-        justify-content: flex-end;
         gap: 35px;
         width: 100%;
         max-width: 512px;

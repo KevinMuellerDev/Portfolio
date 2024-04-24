@@ -1,10 +1,9 @@
+@use './../../../styles.scss' as *;
 $header-height: 109px;
 
 .skills-content {
     height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(space-between, center);
     padding-left: 100px;
 
 
@@ -18,8 +17,7 @@ $header-height: 109px;
         z-index: 10;
 
         .icon {
-            display: flex;
-            align-items: center;
+            @include flex(flex-start,center);
             flex-direction: column;
             text-align: center;
             width: 88px;
@@ -45,9 +43,7 @@ $header-height: 109px;
         overflow-x: hidden;
 
         .skills-header {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
+            @include flex(flex-end, center);
 
 
             h2 {
