@@ -52,6 +52,8 @@ export class MyskillsComponent {
     }
   ];
 
-
+  navigateToContact(){
+    window.location.href="#contact"
+  }
 
 }

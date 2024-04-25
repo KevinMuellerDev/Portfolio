@@ -1,0 +1,43 @@
+@use './../../../styles.scss' as *; 
+$header-height: 109px;
+
+.contact-section{
+    height: calc(100vh - $header-height);
+
+    .contact-head{
+        @include flex(flex-start, center);
+        gap: 40px;
+        margin-bottom: 80px;
+
+        .divider-contact{
+            background-color: #FF4747;
+            height: 4px;
+            width: 50px;
+            border-radius: 4px;
+        }
+
+        h2{
+            font-size: 90px;
+            font-weight: 700;
+        }
+    }
+
+    .contact-content{
+        padding: 0 100px;
+        @include flex(space-between, flex-start);
+        
+        .contact-info{
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            width: 100%;
+            max-width: 473px;
+
+            h3{
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

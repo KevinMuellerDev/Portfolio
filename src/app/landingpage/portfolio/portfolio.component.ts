@@ -16,4 +16,7 @@ export class PortfolioComponent {
   constructor(projectData: ProjectdataService){
     this.projects = projectData.projects;
   }
+
+
+
 }
