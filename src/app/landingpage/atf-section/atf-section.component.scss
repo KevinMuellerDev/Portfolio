@@ -119,10 +119,10 @@ $header-height: 109px;
 
     .profile-full {
         position: absolute;
-        top: calc(106px - $header-height);
-        left: 47px;
+        top: calc(206px - $header-height);
+        left: 0px;
         width: 100%;
-        max-width: 646px;
+        max-width: 850px;
         object-fit: contain;
         margin-right: calc(100% - 646px);
     }
