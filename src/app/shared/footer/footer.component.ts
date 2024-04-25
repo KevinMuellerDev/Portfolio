@@ -10,16 +10,24 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  links:string[] =['impressum','impressum','impressum']
+  links:string[] =[
+    'https://github.com/KevinMuellerDev',
+    'https://www.linkedin.com/in/kevin-m%C3%BCller-386119277/']
   isTarget:string = '';
   imprint:string = 'imprint';
 
-  linkToPage(index:number){
-    window.location.href =`${this.links[index]}`;
+  navigateToPage(index:number){
+    window.open(this.links[index], '_blank')?.focus();
   }
 
   navigateHome(){
     window.scrollTo(0 , document.body.scrollTop);
   }
+
+  navigateToContact(){
+    window.location.href="#contact";
+  }
+
+
 
 }

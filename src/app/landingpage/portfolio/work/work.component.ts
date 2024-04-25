@@ -12,4 +12,8 @@ import { ProjectData } from "./../../../interface/projectdata";
 
 export class WorkComponent {
   @Input() project!:ProjectData;
+
+  navigateToUrl(url:string){
+    window.open(url, "_blank")?.focus();
+  }
 }

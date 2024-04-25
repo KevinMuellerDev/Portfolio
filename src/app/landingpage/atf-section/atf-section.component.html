@@ -9,7 +9,7 @@
                     <span class="job-description">FRONTEND DEVELOPER</span>
                 </div>
             </div>
-            <div class="greeting-button">
+            <div class="greeting-button" (click)="navigateToContact()">
                 <span>Let's Talk !</span>
             </div>
         </div>
@@ -23,9 +23,9 @@
     </div>
     <div class="greeting-icons">
         <div class="divider"></div>
-        <img src="/assets/img/icon/github.svg" alt="">
-        <img src="/assets/img/icon/emailbtn.svg" alt="">
-        <img src="/assets/img/icon/linkedin.svg" alt="">
+        <img src="/assets/img/icon/github.svg" alt="" (click)="navigateToPage(0)">
+        <img src="/assets/img/icon/emailbtn.svg" alt="" (click)="navigateToContact()">
+        <img src="/assets/img/icon/linkedin.svg" alt="" (click)="navigateToPage(1)">
         <a href="mailto:kevin.mueller@tuta.com">kevin.mueller&#64;tuta.com</a>
     </div>
     <img class="scrolldown" src="/assets/img/scrolldown.png" alt="scrolldown" (click)="navigateToAbout()">

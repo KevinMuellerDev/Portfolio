@@ -9,10 +9,10 @@
             <span>{{project.description}}</span>
         </div>
         <div class="btn-project">
-            <div class="livetest-btn">
+            <div class="livetest-btn" (click)="navigateToUrl(project.liveUrl)">
                 <span>Live test</span>
             </div>
-            <div class="github-btn">
+            <div class="github-btn" (click)="navigateToUrl(project.githubUrl)">
                 <span>Github</span>
             </div>
         </div>
