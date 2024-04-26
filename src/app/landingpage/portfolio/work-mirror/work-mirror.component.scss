@@ -49,6 +49,7 @@
             @include flex(flex-end, flex-end);
             gap: 86px;
             width: 100%;
+            text-wrap: nowrap;
         }
     }
 }
