@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import aos from 'aos';
-import 'aos/dist/aos.css';
+/* import 'aos/dist/aos.css'; */
 @Component({
   selector: 'app-root',
   standalone: true,
