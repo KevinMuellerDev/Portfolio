@@ -14,17 +14,24 @@
         </div>
         <div class="form-container">
             <div class="form-wrapper">
-                <form>
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm ="ngForm">
                     <div>
-                        <input type="text" placeholder="Your name" required>
-                        <span class="d-none">Your name is required</span>
+                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" autocomplete="off" required>
+                        @if (!name.valid && name.touched) {
+                            <span>Your name is required</span>
+                        }
                     </div>
                     <div>
-                        <input type="email" placeholder="Your email" required>
-                        <span class="d-none">Your email is required</span>
+                        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" autocomplete="off" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                        @if (!email.valid && email.touched && !email.disabled) {
+                            <span>Your email is required</span>
+                        }
                     </div>
                     <div>
-                        <textarea name="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                        <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                        @if (!message.valid && message.touched && !message.disabled) {
+                            <span>Your message is required</span>
+                        }
                         <span class="d-none">Your message is required</span>
                     </div>
                     <div class="checkbox">
@@ -32,9 +39,7 @@
                         <span>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</span>
                     </div>
                     <div>
-                        <div class="submit-btn">
-                            <span>Send Message !</span>
-                        </div>
+                        <input class="submit-btn" type="submit" value="Send Message !">
                     </div>
                 </form>
             </div>
