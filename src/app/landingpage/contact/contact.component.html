@@ -1,45 +1,72 @@
 <div class="contact-section">
-    <div class="contact-head">
+    <div class="contact-head"
+         data-aos="fade-right"
+         data-aos-delay="100"
+         data-aos-easing="linear"
+         data-aos-duration="500">
         <div class="divider-contact"></div>
         <h2>Contact</h2>
     </div>
     <div class="contact-content">
-        <div class="contact-info">
+        <div class="contact-info"
+        data-aos="fade-right"
+        data-aos-delay="100"
+        data-aos-easing="linear"
+        data-aos-duration="500">
             <h3>Got a problem to solve?</h3>
-            <span>Contact me through this form, I am interested in hearing 
+            <span>Contact me through this form, I am interested in hearing
                 from you, knowing your ideas and contributing
                 to your projects with my work.
             </span>
             <span>Need a Frontend developer? <b>Contact me!</b></span>
         </div>
-        <div class="form-container">
+        <div class="form-container"
+        data-aos="fade-left"
+        data-aos-delay="100"
+        data-aos-easing="linear"
+        data-aos-duration="500">
             <div class="form-wrapper">
-                <form (ngSubmit)="onSubmit(contactForm)" #contactForm ="ngForm">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <div>
-                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" autocomplete="off" required>
+                        <input #name="ngModel" [ngClass]="{
+                            invalid:(name.invalid && name.touched) || (name.invalid && contactForm.submitted), 
+                            valid: (name.valid && name.touched)}"
+                               [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name"
+                               autocomplete="off" required>
                         @if (!name.valid && name.touched) {
-                            <span>Your name is required</span>
+                        <span>Your name is required</span>
                         }
                     </div>
                     <div>
-                        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" autocomplete="off" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                        <input #email="ngModel" [ngClass]="{
+                            invalid:(email.invalid && email.touched) || (email.invalid && contactForm.submitted), 
+                            valid: (email.valid && email.touched)}"
+                               [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                               placeholder="Your email" autocomplete="off" required
+                               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                         @if (!email.valid && email.touched && !email.disabled) {
-                            <span>Your email is required</span>
+                        <span>Your email is required</span>
                         }
                     </div>
                     <div>
-                        <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                        <textarea #message="ngModel" [ngClass]="{invalid:(message.invalid && message.touched) || (message.invalid && contactForm.submitted), 
+                            valid: (message.valid && message.touched)}"
+                                  [(ngModel)]="contactData.message" id="message" name="message" cols="30" rows="10"
+                                  placeholder="Your message" required></textarea>
                         @if (!message.valid && message.touched && !message.disabled) {
-                            <span>Your message is required</span>
+                        <span>Your message is required</span>
                         }
                         <span class="d-none">Your message is required</span>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox" required>
-                        <span>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</span>
+                        <input #checkbox="ngModel" [ngModel] name="checkbox" type="checkbox" required>
+                        <span>I've read the <a href="">privacy policy</a> and agree to the processing of my data as
+                            outlined.</span>
                     </div>
                     <div>
-                        <input class="submit-btn" type="submit" value="Send Message !">
+                        <input [disabled]="!checkbox"
+                               [ngClass]="{disabled:(name.invalid || email.invalid || message.invalid || checkbox.invalid)}"
+                               class="submit-btn" type="submit" value="Send Message !">
                     </div>
                 </form>
             </div>

@@ -7,6 +7,7 @@ $header-height: 109px;
 
 .contact-section {
     min-height: calc(100vh - $header-height);
+    overflow-x: hidden;
 
     @media(max-width:1024px){
         margin-bottom: 80px;
@@ -170,15 +171,16 @@ $header-height: 109px;
     align-items: center;
     width: 253px;
     padding: 15px 30px;
-    background-color: #B6B6B6!important;
+    background-color: #FA7902!important;
     border-radius: 10px;
     border-color: transparent!important;
     cursor: pointer;
     align-self: center;
     transform-origin: top;
+    transition: transform 75ms ease-in-out;
 
     &:hover {
-        transition: transform 75ms ease-in-out;
+        
         transform: scale(1.1);
     }
 
@@ -188,10 +190,27 @@ $header-height: 109px;
     }
 }
 
+.disabled{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 253px;
+    padding: 15px 30px;
+    background-color: #B6B6B6!important;
+    border-radius: 10px;
+    border-color: transparent!important;
+    cursor: default!important;
+    align-self: center;
+
+    &:hover {
+        transform: scale(1);
+    }
+}
+
 .invalid {
     border: 1px solid red !important;
     outline-color: red !important;
-    /* background-image: url(./../../../assets/img/contact/invalid.png); */
+    background-image: url(/assets/img/icon/invalid.svg);
     background-position: right 20px top 10px;
     background-repeat: no-repeat;
 
@@ -204,8 +223,7 @@ $header-height: 109px;
 .valid {
     border: 1px solid green !important;
     outline-color: green !important;
-    /*     background-image: url(./../../../assets/img/contact/valid.png);
- */
+    background-image: url(/assets/img/icon/valid.svg);
     background-position: right 20px top 10px;
     background-repeat: no-repeat;
 

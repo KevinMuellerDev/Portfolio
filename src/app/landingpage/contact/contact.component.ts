@@ -18,8 +18,9 @@ export class ContactComponent {
   contactData = {
     name: '',
     email: '',
-    message: '',
+    message: ''
   };
+
 
   mailTest = false;
 
