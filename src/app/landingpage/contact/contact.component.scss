@@ -208,28 +208,28 @@ $header-height: 109px;
 }
 
 .invalid {
-    border: 1px solid red !important;
-    outline-color: red !important;
+    border: 1px solid #E61C40 !important;
+    outline-color: #E61C40 !important;
     background-image: url(/assets/img/icon/invalid.svg);
     background-position: right 20px top 10px;
     background-repeat: no-repeat;
 
     &:focus-visible {
-        outline: 1px solid red !important;
-        border: 1px solid red !important;
+        outline: 1px solid #E61C40 !important;
+        border: 1px solid #E61C40 !important;
     }
 }
 
 .valid {
-    border: 1px solid green !important;
-    outline-color: green !important;
+    border: 1px solid #70E61C !important;
+    outline-color: #70E61C !important;
     background-image: url(/assets/img/icon/valid.svg);
     background-position: right 20px top 10px;
     background-repeat: no-repeat;
 
     &:focus-visible {
-        outline: 1px solid green !important;
-        border: 1px solid green !important;
+        outline: 1px solid #70E61C !important;
+        border: 1px solid #70E61C !important;
     }
 }
 
