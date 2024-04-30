@@ -95,30 +95,36 @@
         .description-text {
             align-items: center;
 
-            h2, span{
+            h2,
+            span {
                 align-self: center;
                 text-align: center;
             }
         }
 
-        .btn-project{
+        .btn-project {
             justify-content: center;
         }
     }
 }
 
-@media(max-width:850px){
-    .project-picture{
-        width: unset!important;
+@media(max-width:850px) {
+    .project-picture {
+        width: unset !important;
     }
 }
 
-@media(max-width:460px){
-    .project-picture img{
+@media(max-width:460px) {
+    .project-picture img {
         width: 100%;
     }
 
-    .btn-project{
-        gap:24px!important;
+    .btn-project {
+        gap: 24px !important;
+    }
+
+    .livetest-btn span,
+    .github-btn span {
+        font-size: 16px;
     }
 }

@@ -1,51 +1,51 @@
-@use'./../../../../styles.scss'as *;
+@use'./../../../../styles.scss' as *;
 
-.project{
+.project {
     @include flex(flex-end, flex-end);
     flex-direction: row-reverse;
     gap: 35px;
     overflow: hidden;
 
 
-    .project-picture{
+    .project-picture {
         width: 100%;
         max-width: 620px;
-        
+
     }
 
-    .project-description{
+    .project-description {
         @include flex(flex-end, flex-end);
         flex-direction: column;
         gap: 35px;
         width: 100%;
         max-width: 512px;
 
-        .description-text{
+        .description-text {
             display: flex;
             flex-direction: column;
             gap: 8px;
         }
 
-        span{
+        span {
             flex: 1;
             text-align: end;
         }
 
-        h2{
+        h2 {
             align-self: flex-end;
             font-size: 32px;
             font-weight: 700;
             color: #FF4747;
         }
 
-        .techstack{
+        .techstack {
             align-self: flex-end;
             font-size: 23px;
             font-weight: 400;
             color: #FA7902;
         }
 
-        .btn-project{
+        .btn-project {
             @include flex(flex-end, flex-end);
             gap: 86px;
             width: 100%;
@@ -92,7 +92,7 @@
     }
 }
 
-@media(max-width: 1280px){
+@media(max-width: 1280px) {
     .project {
         flex-direction: column;
         align-items: center;
@@ -105,31 +105,37 @@
         .description-text {
             align-items: center;
 
-            h2, span{
-                align-self: center!important;
+            h2,
+            span {
+                align-self: center !important;
                 text-align: center;
                 text-wrap: wrap;
             }
         }
 
-        .btn-project{
-            justify-content: center!important;
+        .btn-project {
+            justify-content: center !important;
         }
     }
 }
 
-@media(max-width:850px){
-    .project-picture{
-        width: unset!important;
+@media(max-width:850px) {
+    .project-picture {
+        width: unset !important;
     }
 }
 
-@media(max-width:460px){
-    .project-picture img{
+@media(max-width:460px) {
+    .project-picture img {
         width: 100%;
     }
-    
-    .btn-project{
-        gap:24px!important;
+
+    .btn-project {
+        gap: 24px !important;
+    }
+
+    .livetest-btn span,
+    .github-btn span {
+        font-size: 16px;
     }
 }

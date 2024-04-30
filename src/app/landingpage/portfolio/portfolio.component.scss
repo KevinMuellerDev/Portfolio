@@ -1,4 +1,5 @@
 @use'./../../../styles.scss' as *;
+
 .portfolio-section {
     display: flex;
     flex-direction: column;
@@ -48,7 +49,7 @@
         }
     }
 
-    .portfolio-content{
+    .portfolio-content {
         @include flex(flex-start, center);
         flex-direction: column;
         gap: 160px;
@@ -58,21 +59,40 @@
     }
 }
 
-@media(max-width:850px){
-    app-work{
+@media(max-width:850px) {
+    app-work {
         width: 100%;
     }
 
-    app-work-mirror{
+    app-work-mirror {
         width: 100%;
     }
 
-    .portfolio-section{
+    .portfolio-section {
         padding-left: 0;
 
-        .portfolio-content{
+        .portfolio-header {
+            width: 100%;
+        }
+
+        .portfolio-content {
             padding-right: 0;
         }
+    }
+
+    .headspan span{
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 640px) {
+    h2 {
+        font-size: 45px !important;
+    }
+
+    .portfolio-content{
+        margin-top: 300px!important;
     }
 }
 
