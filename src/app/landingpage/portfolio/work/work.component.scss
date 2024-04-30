@@ -1,40 +1,41 @@
 @use'./../../../../styles.scss' as *;
-.project{
+
+.project {
     @include flex(flex-end, flex-end);
     gap: 35px;
     overflow: hidden;
 
-    .project-picture{
+    .project-picture {
         width: 100%;
         max-width: 620px;
     }
 
-    .project-description{
+    .project-description {
         @include flex(flex-end, flex-end);
         flex-direction: column;
         gap: 35px;
         width: 100%;
         max-width: 512px;
 
-        .description-text{
+        .description-text {
             display: flex;
             flex-direction: column;
             gap: 8px;
         }
 
-        h2{
+        h2 {
             font-size: 32px;
             font-weight: 700;
             color: #FF4747;
         }
 
-        .techstack{
+        .techstack {
             font-size: 23px;
             font-weight: 400;
             color: #FA7902;
         }
 
-        .btn-project{
+        .btn-project {
             display: flex;
             gap: 86px;
             width: 100%;
@@ -78,5 +79,46 @@
     &:active {
         background-color: white;
         color: black;
+    }
+}
+
+@media(max-width: 1280px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+
+        .project-description {
+            align-items: center;
+        }
+
+        .description-text {
+            align-items: center;
+
+            h2, span{
+                align-self: center;
+                text-align: center;
+            }
+        }
+
+        .btn-project{
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width:850px){
+    .project-picture{
+        width: unset!important;
+    }
+}
+
+@media(max-width:460px){
+    .project-picture img{
+        width: 100%;
+    }
+
+    .btn-project{
+        gap:24px!important;
     }
 }
