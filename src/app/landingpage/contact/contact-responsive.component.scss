@@ -1,0 +1,37 @@
+@use './../../../styles.scss' as *;
+$header-height: 109px;
+
+@media(max-width:1024px) {
+    .contact-section {
+        margin-bottom: 80px;
+
+        .contact-head {
+            margin-bottom: 20px;
+
+            h2 {
+                font-size: 45px;
+            }
+        }
+
+        .contact-content {
+            @include flex($align: center);
+            flex-direction: column;
+            gap: 56px;
+        }
+    }
+
+}
+
+@media(max-width:850px) {
+    .contact-section {
+        min-height: calc(130vh - $header-height);
+    }
+
+    .contact-content {
+        padding: 0 24px !important;
+    }
+
+    .up-btn{
+        margin-top: 8px;
+    }
+}

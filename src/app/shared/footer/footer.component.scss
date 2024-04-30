@@ -55,3 +55,26 @@ div.footer {
     }
 
 }
+
+@media (max-width: 1024px) {
+    .footer{
+        padding: 0!important;
+    }
+
+    .footer-content{
+        @include flex(center,center);
+        flex-direction: column;
+        gap: 16px;
+
+        span{
+            margin-left: 0!important;
+        }
+
+    }
+
+    a{
+        left: 50%!important;
+        top: 80%!important;
+        transform: translateX(-50%);
+    }
+}

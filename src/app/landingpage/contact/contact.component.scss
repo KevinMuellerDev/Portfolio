@@ -6,21 +6,14 @@ $header-height: 109px;
 }
 
 .contact-section {
-    min-height: calc(100vh - $header-height);
+    min-height: calc(120vh - $header-height);
     overflow-x: hidden;
-
-    @media(max-width:1024px){
-        margin-bottom: 80px;
-    }
+    margin-bottom: 80px;
 
     .contact-head {
         @include flex(flex-start, center);
         gap: 40px;
         margin-bottom: 80px;
-
-        @media(max-width: 1024px){
-            margin-bottom: 20px;
-        }
 
         .divider-contact {
             background-color: #FF4747;
@@ -33,21 +26,12 @@ $header-height: 109px;
             font-size: 90px;
             font-weight: 700;
 
-            @media(max-width: 1024px) {
-                font-size: 45px;
-            }
         }
     }
 
     .contact-content {
         padding: 0 100px;
         @include flex(space-between, flex-start);
-
-        @media (max-width: 1024px) {
-            @include flex($align: center);
-            flex-direction: column;
-            gap: 56px;
-        }
 
         .contact-info {
             display: flex;
@@ -163,6 +147,19 @@ $header-height: 109px;
 
 ::-webkit-resizer {
     background-image: url(/assets/img/resizer.png);
+}
+
+.up-btn{
+    height: 39px;
+    width: 39px;
+    background: url(/assets/img/icon/upbutton.svg);
+    align-self: flex-end;
+    cursor: pointer;
+    transition: background 75ms ease-in-out;
+
+    &:hover{
+        background: url(/assets/img/icon/upbutton-hover.svg);
+    }
 }
 
 .submit-btn {
