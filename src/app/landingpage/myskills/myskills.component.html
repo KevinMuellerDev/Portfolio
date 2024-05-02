@@ -1,30 +1,38 @@
 <div class="skills-content">
+    <div class="getintouchbutton" (click)="navigateToContact()">
+        <span>Get in touch</span>
+    </div>
     <div class="icon-section"
-    data-aos="zoom-in-right"
-    data-aos-easing="ease-in-out"
-    data-aos-duration="750">
+         data-aos="zoom-in-right"
+         data-aos-easing="ease-in-out"
+         data-aos-duration="750">
         <div class="icon" *ngFor="let item of skills; index as i;">
-            <img src={{item.url}} alt={{item.title}}>
-            <span>{{item.title}}</span>
+            @if (screenWidth <= 627) {
+                <img src={{item.urlMobile}} alt={{item.title}}>
+               }
+               @else {
+               <img src={{item.url}} alt={{item.title}}>
+                }
+                <span>{{item.title}}</span>
         </div>
     </div>
     <div class="my-skills-description">
         <div class="skills-header"
-        data-aos="zoom-in-left"
-        data-aos-easing="ease-in-out"
-        data-aos-duration="750">
+             data-aos="zoom-in-left"
+             data-aos-easing="ease-in-out"
+             data-aos-duration="750">
             <h2>My skills</h2>
             <div class="divider"></div>
         </div>
         <div class="skill-about"
-        data-aos="zoom-in-left"
-        data-aos-easing="ease-in-out"
-        data-aos-duration="750">
-            <span>Î have grown my frontend development skills that have
+             data-aos="zoom-in-left"
+             data-aos-easing="ease-in-out"
+             data-aos-duration="750">
+            <span>I have grown my frontend development skills that have
                 allowed me to create different real projects.
             </span>
         </div>
-        <div class="getintouch-button" (click)="navigateToContact()">
+        <div class="getintouch-button" [ngClass]="{dnone: (screenWidth <= 1024)}" (click)="navigateToContact()">
             <span>Get in touch</span>
         </div>
     </div>

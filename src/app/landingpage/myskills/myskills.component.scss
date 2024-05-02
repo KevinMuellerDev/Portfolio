@@ -1,6 +1,10 @@
 @use './../../../styles.scss' as *;
 $header-height: 109px;
 
+.dnone {
+    display: none;
+}
+
 .skills-content {
     height: 100vh;
     @include flex(space-between, center);
@@ -17,7 +21,7 @@ $header-height: 109px;
         z-index: 10;
 
         .icon {
-            @include flex(flex-start,center);
+            @include flex(flex-start, center);
             flex-direction: column;
             text-align: center;
             width: 88px;
@@ -38,7 +42,6 @@ $header-height: 109px;
         flex-direction: column;
         width: 100%;
         max-width: 571px;
-        height: 315px;
         margin-top: -48px;
         overflow-x: hidden;
 
@@ -84,6 +87,7 @@ $header-height: 109px;
             transform-origin: top;
             transition: transform 75ms ease-in-out;
             font-size: 23px;
+            z-index: 10;
 
             &:hover {
                 transform: scale(1.1);
@@ -105,4 +109,88 @@ $header-height: 109px;
         height: 1290px;
     }
 
+}
+
+.getintouchbutton {
+    display: none;
+    margin-top: 16px;
+    align-self: center;
+    padding: 15px 30px;
+    background-color: #FA7902;
+    border-radius: 10px;
+    cursor: pointer;
+    transform-origin: top;
+    transition: transform 75ms ease-in-out;
+    font-size: 23px;
+    z-index: 10;
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: #FF4747;
+    }
+
+    &:active {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media(max-width: 1024px) {
+    .skills-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        padding-left: 0;
+    }
+
+    .icon-section {
+        @include flex(center, center)
+    }
+
+    .getintouchbutton {
+        display: block;
+    }
+
+}
+
+@media(max-width:640px) {
+    .icon span {
+        font-size: 14px;
+    }
+
+    .icon-section {
+        column-gap: 23% !important;
+    }
+
+    .shadow {
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 45px !important;
+    }
+
+    .divider {
+        width: 20px!important;
+        margin-left: 8px!important;
+    }
+
+    .skill-about {
+        padding: 0 16px!important;
+        width: calc(100% - 32px)!important;
+        font-size: 16px!important;
+    }
+}
+
+@media(max-width: 510px) {
+    .icon-section {
+        column-gap: 14% !important;
+    }
+}
+
+@media(max-width: 385px) {
+    .icon-section {
+        column-gap: 4% !important;
+    }
 }
