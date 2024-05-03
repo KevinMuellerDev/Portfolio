@@ -78,7 +78,7 @@ $header-height: 109px;
         }
 
         .getintouch-button {
-            margin-top: 48px;
+            margin: 48px 0 20px 0;
             align-self: center;
             padding: 15px 30px;
             background-color: #FA7902;
@@ -192,5 +192,9 @@ $header-height: 109px;
 @media(max-width: 385px) {
     .icon-section {
         column-gap: 4% !important;
+    }
+
+    .my-skills-description{
+        margin-top: -68px!important;
     }
 }

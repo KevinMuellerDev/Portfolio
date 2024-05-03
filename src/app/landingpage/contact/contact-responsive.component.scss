@@ -3,7 +3,7 @@ $header-height: 109px;
 
 @media(max-width:1024px) {
     .contact-section {
-        margin-bottom: 80px;
+        padding-bottom: 150px;
 
         .contact-head {
             margin-bottom: 20px;
@@ -23,9 +23,6 @@ $header-height: 109px;
 }
 
 @media(max-width:850px) {
-    .contact-section {
-        min-height: calc(130vh - $header-height);
-    }
 
     .contact-content {
         padding: 0 24px !important;

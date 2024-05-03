@@ -6,9 +6,8 @@ $header-height: 109px;
 }
 
 .contact-section {
-    min-height: calc(120vh - $header-height);
     overflow-x: hidden;
-    margin-bottom: 80px;
+    padding-bottom: 100px;
 
     .contact-head {
         @include flex(flex-start, center);

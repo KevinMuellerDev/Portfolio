@@ -1,7 +1,7 @@
 <div class="atf">
-    <div>
-        <div class="greeting-wrapper" 
-        data-aos="fade-left">
+    <div class="atf-mobile">
+        <div class="greeting-wrapper"
+             data-aos="fade-left">
             <div class="greeting">
                 <div class="vertical">I am</div>
                 <div class="job">
@@ -13,14 +13,14 @@
                 <span>Let's Talk !</span>
             </div>
         </div>
-
-        <img class="shadow" src="/assets/img/shadowsatf.svg" alt="shadowsatf">
-        <img class="shadowabout" src="/assets/img/shadowredabout.svg" alt="">
-        <img class="profile-full" 
-        data-aos="fade-right"
-        src="/assets/img/templateUser.png" alt="">
-        <img class="shape" src="/assets/img/sicleshape.png" alt="sicleshape">
+        <div class="picture-wrapper">
+            <img class="shadow" src="/assets/img/shadowsatf.svg" alt="shadowsatf">
+            <img class="profile-full"
+                 data-aos="fade-right"
+                 src="/assets/img/templateUser.png" alt="">
+        </div>
     </div>
+    <img class="shape" src="/assets/img/sicleshape.png" alt="sicleshape">
     <div class="greeting-icons">
         <div class="divider"></div>
         <img src="/assets/img/icon/github.svg" alt="" (click)="navigateToPage(0)">
@@ -28,5 +28,6 @@
         <img src="/assets/img/icon/linkedin.svg" alt="" (click)="navigateToPage(1)">
         <a href="mailto:info@kevin-mueller-dev.de">info&#64;kevin-mueller-dev.de</a>
     </div>
+    <img class="shadowabout" src="/assets/img/shadowredabout.svg" alt="">
     <img class="scrolldown" src="/assets/img/scrolldown.png" alt="scrolldown" (click)="navigateToAbout()">
 </div>
