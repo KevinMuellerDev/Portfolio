@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslationService } from '../../shared/services/translation.service';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-atf-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './atf-section.component.html',
   styleUrl: './atf-section.component.scss'
 })
@@ -12,8 +15,9 @@ import { CommonModule } from '@angular/common';
 export class AtfSectionComponent {
   links:string[] =[
     'https://github.com/KevinMuellerDev',
-    'https://www.linkedin.com/in/kevin-m%C3%BCller-386119277/']
+    'https://www.linkedin.com/in/kevin-m%C3%BCller-386119277/'];
 
+  translate=Inject(TranslationService);
 
   navigateToAbout(){
     window.location.href="#about";

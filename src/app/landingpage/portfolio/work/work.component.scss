@@ -1,9 +1,12 @@
 @use'./../../../../styles.scss' as *;
 
 .project {
+    position: relative;
     @include flex(flex-end, flex-end);
     gap: 35px;
     overflow: hidden;
+    z-index: 20;
+
 
     .project-picture {
         width: 100%;

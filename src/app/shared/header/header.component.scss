@@ -1,8 +1,9 @@
 @use './../../../styles.scss' as *;
 
 .header {
-    position: fixed;
+    position: sticky;
     z-index: 9999;
+    top: 0;
     width: calc(100% - 200px);
     height: 109px;
     @include flex(space-between, center);
