@@ -29,13 +29,17 @@ export class HeaderComponent {
 
   noScroll() {
     if (!this.menuOpen) {
-      document.getElementsByTagName('app-root')[0].classList.add('modal-open');
       document.getElementsByClassName('menulist')[0].classList.remove('d-none');
-      this.menuOpen = true;
+      setTimeout(() => {
+        document.getElementsByTagName('app-root')[0].classList.add('modal-open');
+        this.menuOpen = true;
+      }, 125);
     } else {
-      document.getElementsByTagName('app-root')[0].classList.remove('modal-open');
-      document.getElementsByClassName('menulist')[0].classList.add('d-none');
       this.menuOpen = false;
+      document.getElementsByTagName('app-root')[0].classList.remove('modal-open');
+      setTimeout(() => {
+        document.getElementsByClassName('menulist')[0].classList.add('d-none');
+      }, 125);
     }
   }
 

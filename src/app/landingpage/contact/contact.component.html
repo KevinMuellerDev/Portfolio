@@ -2,17 +2,14 @@
     <div class="contact-head" data-aos="fade-right" data-aos-delay="100" data-aos-easing="linear"
         data-aos-duration="500">
         <div class="divider-contact"></div>
-        <h2>Contact</h2>
+        <h2>{{"contact" | translate}}</h2>
     </div>
     <div class="contact-content">
         <div class="contact-info" data-aos="fade-right" data-aos-delay="100" data-aos-easing="linear"
             data-aos-duration="500">
-            <h3>Got a problem to solve?</h3>
-            <span>Contact me through this form, I am interested in hearing
-                from you, knowing your ideas and contributing
-                to your projects with my work.
-            </span>
-            <span>Need a Frontend developer? <b>Contact me!</b></span>
+            <h3>{{"contact_text1" | translate}}</h3>
+            <span>{{"contact_text2" | translate}}</span>
+            <span>{{"contact_text3" | translate}} <b>{{"contact_text4" | translate}}</b></span>
         </div>
         <div class="form-container" data-aos="fade-left" data-aos-delay="100" data-aos-easing="linear"
             data-aos-duration="500">
@@ -22,35 +19,34 @@
                         <input #name="ngModel" [ngClass]="{
                             invalid:(name.invalid && name.touched) || (name.invalid && contactForm.submitted), 
                             valid: (name.valid && name.touched)}" [(ngModel)]="contactData.name" type="text" id="name"
-                            name="name" placeholder="Your name" autocomplete="off" required>
+                            name="name" placeholder="{{'name_input' | translate}}" autocomplete="off" required>
                         @if (!name.valid && name.touched) {
-                        <span>Your name is required</span>
+                        <span>{{"required_name" | translate}}</span>
                         }
                     </div>
                     <div>
                         <input #email="ngModel" [ngClass]="{
                             invalid:(email.invalid && email.touched) || (email.invalid && contactForm.submitted), 
                             valid: (email.valid && email.touched)}" [(ngModel)]="contactData.email" type="email"
-                            id="email" name="email" placeholder="Your email" autocomplete="off" required
+                            id="email" name="email" placeholder="{{'email_input' | translate}}" autocomplete="off" required
                             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                         @if (!email.valid && email.touched && !email.disabled) {
-                        <span>Your email is required</span>
+                        <span>{{"required_mail" | translate}}</span>
                         }
                     </div>
                     <div>
                         <textarea #message="ngModel" [ngClass]="{
                             invalid:(message.invalid && message.touched) || (message.invalid && contactForm.submitted), 
                             valid: (message.valid && message.touched)}" [(ngModel)]="contactData.message" id="message"
-                            name="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                            name="message" cols="30" rows="10" placeholder="{{'message_input' | translate}}" required></textarea>
                         @if (!message.valid && message.touched && !message.disabled) {
-                        <span>Your message is required</span>
+                        <span>{{"required_message" | translate}}</span>
                         }
                         <span class="d-none">Your message is required</span>
                     </div>
                     <div class="checkbox">
                         <input #checkbox="ngModel" [ngModel] name="checkbox" type="checkbox" required>
-                        <span>I've read the <a href="">privacy policy</a> and agree to the processing of my data as
-                            outlined.</span>
+                        <span>{{"check_text1" | translate}} <a href="">{{"check_text2" | translate}}</a> {{"check_text3" | translate}}</span>
                     </div>
                     <div>
                         <input [disabled]="!checkbox"

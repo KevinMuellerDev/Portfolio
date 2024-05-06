@@ -8,7 +8,7 @@ export class ProjectdataService {
     {
       title: "Join",
       stack: "JavaScript | HTML | CSS",
-      description: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      description: "join_desc",
       image: "/assets/img/joinphoto.png",
       liveUrl: "http://join.kevin-mueller-dev.de/",
       githubUrl: "https://github.com/KevinMuellerDev/join-Kanban"
@@ -16,7 +16,7 @@ export class ProjectdataService {
     {
       title: "Halloween Madness",
       stack: "JavaScript | HTML | CSS",
-      description: "A simple Jump-and-Run game based on an object-oriented approach. Help Maddy to find coins and arcane orbs to fight against the zombies.",
+      description: "halloween_desc",
       image: "/assets/img/joinphoto.png",
       liveUrl: "http://halloween-madness.kevin-mueller-dev.de/",
       githubUrl: "https://github.com/KevinMuellerDev/halloween-madness"

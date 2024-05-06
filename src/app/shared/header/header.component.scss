@@ -47,15 +47,17 @@
 }
 
 .openmenu{
+    transition: all 125ms ease-in-out;
     transform: translateX(-100%);
 }
 
 .closemenu{
+    transition: transform 125ms ease-in-out;
     transform: translateX(100%);
 }
 
 .d-none{
-    display: none;
+    display: none!important;
 }
 
 @media(max-width: 920px){
