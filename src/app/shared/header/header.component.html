@@ -7,4 +7,15 @@
         <a [ngClass]="{'underline': isTarget === skills}" (click)="isTarget = skills" href="#skills">Skills</a>
         <a [ngClass]="{'underline': isTarget === portfolio}" (click)="isTarget = portfolio" href="#portfolio">Portfolio</a>
     </div>
+    <div class="mobilemenu" (click)="noScroll()">
+        <img src="/assets/img/icon/burgermenu.svg" alt="menu">
+    </div>
+</div>
+<div class="menulist" [ngClass]="{'openmenu': menuOpen, 'closemenu':!menuOpen}">
+    <div class="mobilelinks">
+        <a (click)="noScroll()" href="#about">About me</a>
+        <a (click)="noScroll()" href="#skills">My skills</a>
+        <a (click)="noScroll()" href="#portfolio">Portfolio</a>
+        <a (click)="noScroll()" href="#contact">Contact</a>
+    </div>
 </div>
