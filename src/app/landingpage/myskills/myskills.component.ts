@@ -1,14 +1,18 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslationService } from '../../shared/services/translation.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-myskills',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './myskills.component.html',
   styleUrl: './myskills.component.scss'
 })
 export class MyskillsComponent {
+  translate = Inject(TranslationService)
+
   skills = [
     {
       url: '/assets/img/icon/angular.svg',
@@ -71,7 +75,6 @@ export class MyskillsComponent {
   @HostListener('window:resize', ['$event'])
   onResize(event:any) {
     this.screenWidth = window.innerWidth;
-
   }
 
   navigateToContact(){

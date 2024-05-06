@@ -3,19 +3,22 @@
         <img (click)="navigateHome()" class="logo" src="/assets/img/icon/logo.png" alt="" >
     </div>
     <div class="navbar">
-        <a [ngClass]="{'underline': isTarget === about}" (click)="isTarget = about" href="#about">About Me</a>
-        <a [ngClass]="{'underline': isTarget === skills}" (click)="isTarget = skills" href="#skills">Skills</a>
+        <a [ngClass]="{'underline': isTarget === about}" (click)="isTarget = about" href="#about">{{"about_me" | translate}}</a>
+        <a [ngClass]="{'underline': isTarget === skills}" (click)="isTarget = skills" href="#skills">{{"skills" | translate}}</a>
         <a [ngClass]="{'underline': isTarget === portfolio}" (click)="isTarget = portfolio" href="#portfolio">Portfolio</a>
+        <a (click)="translate.switchLanguage('de')">de</a>
+        <a (click)="translate.switchLanguage('en')">en</a>
+
     </div>
     <div class="mobilemenu" (click)="noScroll()">
         <img src="/assets/img/icon/burgermenu.svg" alt="menu">
     </div>
 </div>
-<div class="menulist" [ngClass]="{'openmenu': menuOpen, 'closemenu':!menuOpen}">
+<div class="menulist d-none" [ngClass]="{'openmenu': menuOpen, 'closemenu':!menuOpen}">
     <div class="mobilelinks">
-        <a (click)="noScroll()" href="#about">About me</a>
-        <a (click)="noScroll()" href="#skills">My skills</a>
+        <a (click)="noScroll()" href="#about">{{"about_me" | translate}}</a>
+        <a (click)="noScroll()" href="#skills">{{"skills" | translate}}</a>
         <a (click)="noScroll()" href="#portfolio">Portfolio</a>
-        <a (click)="noScroll()" href="#contact">Contact</a>
+        <a (click)="noScroll()" href="#contact">{{"contact" | translate}}</a>
     </div>
 </div>

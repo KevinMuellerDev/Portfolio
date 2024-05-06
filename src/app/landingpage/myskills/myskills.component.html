@@ -21,19 +21,17 @@
              data-aos="zoom-in-left"
              data-aos-easing="ease-in-out"
              data-aos-duration="750">
-            <h2>My skills</h2>
+            <h2>{{"skills_head" | translate}}</h2>
             <div class="divider"></div>
         </div>
         <div class="skill-about"
              data-aos="zoom-in-left"
              data-aos-easing="ease-in-out"
              data-aos-duration="750">
-            <span>I have grown my frontend development skills that have
-                allowed me to create different real projects.
-            </span>
+            <span>{{"skills_text" | translate}}</span>
         </div>
         <div class="getintouch-button" [ngClass]="{dnone: (screenWidth <= 1024)}" (click)="navigateToContact()">
-            <span>Get in touch</span>
+            <span>{{"skills_text_button" | translate}}</span>
         </div>
     </div>
     <img class="shadow" src="/assets/img/shadowskills.svg" alt="shadowsatf">

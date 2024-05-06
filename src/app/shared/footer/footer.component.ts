@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { TranslationService } from '../services/translation.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
@@ -15,6 +17,8 @@ export class FooterComponent {
     'https://www.linkedin.com/in/kevin-m%C3%BCller-386119277/']
   isTarget:string = '';
   imprint:string = 'imprint';
+
+  translate = Inject(TranslationService);
 
   navigateToPage(index:number){
     window.open(this.links[index], '_blank')?.focus();
