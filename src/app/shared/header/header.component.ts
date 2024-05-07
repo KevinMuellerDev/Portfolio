@@ -18,13 +18,13 @@ export class HeaderComponent {
   about: string = 'about';
   skills: string = 'skills';
   portfolio: string = 'portfolio';
-
   menuOpen: boolean = false;
+  menuGraphic:string= '/assets/img/icon/burgermenu.svg';
 
   constructor(public translate: TranslationService){}
 
   navigateHome() {
-    window.scrollTo(0, document.body.scrollTop);
+    window.location.href='#';
   }
 
   noScroll() {
@@ -32,12 +32,14 @@ export class HeaderComponent {
       document.getElementsByClassName('menulist')[0].classList.remove('d-none');
       setTimeout(() => {
         document.getElementsByTagName('app-root')[0].classList.add('modal-open');
+        this.menuGraphic = '/assets/img/icon/close.svg';
         this.menuOpen = true;
       }, 125);
     } else {
       this.menuOpen = false;
       document.getElementsByTagName('app-root')[0].classList.remove('modal-open');
       setTimeout(() => {
+        this.menuGraphic = '/assets/img/icon/burgermenu.svg';
         document.getElementsByClassName('menulist')[0].classList.add('d-none');
       }, 125);
     }

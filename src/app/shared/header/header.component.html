@@ -15,7 +15,7 @@
     </div>
 
     <div class="mobilemenu" (click)="noScroll()">
-        <img src="/assets/img/icon/burgermenu.svg" alt="menu">
+        <img id="burgermenu" [src]="menuGraphic" alt="menu">
     </div>
 </div>
 <div class="menulist d-none" [ngClass]="{'openmenu': menuOpen, 'closemenu':!menuOpen}">

@@ -1,37 +1,41 @@
 @use './../../../styles.scss' as *;
+
 div.footer {
     position: sticky;
     top: 0;
     height: 291px;
     border-top: 4px solid #FA7902;
-    @include flex(center,center);
+    @include flex(center, center);
     padding: 0px 100px;
     overflow-x: hidden;
-    
+
 
     .logo {
         cursor: pointer;
         width: 300px;
     }
 
-    a {
+    .links {
         position: absolute;
         left: 102px;
         top: 166px;
+        display: flex;
+        gap: 8px;
         color: white;
         text-decoration: none;
 
-        &:hover {
+        a:hover {
             background-image: linear-gradient(#FF4747, #FF4747);
             background-repeat: no-repeat;
             background-position: bottom left;
             background-size: 55px 2px;
         }
+
     }
 
     div.footer-content {
         width: 100%;
-        @include flex(space-between,center);
+        @include flex(space-between, center);
 
         span {
             font-size: 23px;
@@ -57,24 +61,24 @@ div.footer {
 }
 
 @media (max-width: 1024px) {
-    .footer{
-        padding: 0!important;
+    .footer {
+        padding: 0 !important;
     }
 
-    .footer-content{
-        @include flex(center,center);
+    .footer-content {
+        @include flex(center, center);
         flex-direction: column;
-        gap: 16px;
+        gap: 40px;
 
-        span{
-            margin-left: 0!important;
+        span {
+            margin-left: 0 !important;
         }
 
     }
 
-    a{
+
+    .links{
         left: 50%!important;
-        top: 80%!important;
         transform: translateX(-50%);
     }
 }
