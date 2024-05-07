@@ -48,7 +48,7 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => this.displaySearchInfo(),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
@@ -58,5 +58,13 @@ export class ContactComponent {
 
   navigateHome(){
     window.scrollTo(0 , document.body.scrollTop);
+  }
+
+  displaySearchInfo() {
+    let searchInfo:any = document.getElementById("submitInfo");
+    searchInfo.className = "show";
+    setTimeout(function () {
+      searchInfo.className = searchInfo.className.replace("show", "");
+    }, 3000);
   }
 }

@@ -5,6 +5,7 @@ $header-height: 109px;
 .atf {
     position: relative;
     height: calc(100vh - $header-height);
+    overflow-x: clip;
 
 
     div {
@@ -268,6 +269,10 @@ $header-height: 109px;
     .divider {
         display: none !important;
     }
+    .shadow{
+        top:352.62px!important;
+        height: 463px!important;
+    }
 }
 
 @media(max-width:393px) {
@@ -299,8 +304,6 @@ $header-height: 109px;
         left: 50%;
         transform: translateX(-50%);
     }
-
-
 
     .greeting-wrapper {
         padding-left: 16px !important
