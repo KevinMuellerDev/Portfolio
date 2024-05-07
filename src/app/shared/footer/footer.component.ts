@@ -26,7 +26,7 @@ export class FooterComponent {
   }
 
   navigateHome(){
-    window.scrollTo(0 , document.body.scrollTop);
+    window.location.href='#';
   }
 
   navigateToContact(){
