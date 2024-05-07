@@ -6,6 +6,8 @@ $header-height: 109px;
     position: relative;
     height: calc(100vh - $header-height);
     overflow-x: clip;
+    width: 100%;
+
 
 
     div {

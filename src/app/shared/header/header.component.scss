@@ -6,8 +6,8 @@
     top: 0;
     width: calc(100% - 150px);
     height: 109px;
+    max-width: 1440px;
     @include flex(space-between, center);
-    padding: 0px 50px 0px 100px;
     background-color: #141D2F;
     overflow-x: hidden;
 

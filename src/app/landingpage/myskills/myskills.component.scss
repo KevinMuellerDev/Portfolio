@@ -105,8 +105,8 @@ $header-height: 109px;
     .shadow {
         position: absolute;
         top: calc(2333px - $header-height);
-        left: 0px;
         height: 1290px;
+        margin-left: -100px;
     }
 
 }
