@@ -17,18 +17,10 @@ export class ProjectdataService {
       title: "Halloween Madness",
       stack: "JavaScript | HTML | CSS",
       description: "halloween_desc",
-      image: "/assets/img/joinphoto.png",
+      image: "/assets/img/halloweenphoto.png",
       liveUrl: "http://halloween-madness.kevin-mueller-dev.de/",
       githubUrl: "https://github.com/KevinMuellerDev/halloween-madness"
 
-    },
-    {
-      title: "test",
-      stack: "TypeScript | HTML | CSS",
-      description: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      image: "/assets/img/joinphoto.png",
-      liveUrl: "http://halloween-madness.kevin-mueller-dev.de/",
-      githubUrl: "https://github.com/KevinMuellerDev/halloween-madness"
     }
   ]
   constructor() { }
