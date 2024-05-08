@@ -6,7 +6,8 @@ $header-height: 109px;
 }
 
 .skills-content {
-    height: 100vh;
+    min-width: none;
+    min-height: 100vh;
     @include flex(space-between, center);
     padding-left: 100px;
 
@@ -106,7 +107,7 @@ $header-height: 109px;
         position: absolute;
         top: calc(2333px - $header-height);
         height: 1290px;
-        margin-left: -100px;
+        left: 0;
     }
 
 }
@@ -194,7 +195,5 @@ $header-height: 109px;
         column-gap: 4% !important;
     }
 
-    .my-skills-description{
-        margin-top: -68px!important;
-    }
+
 }

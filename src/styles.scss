@@ -78,9 +78,12 @@ body {
     color: white;
     caret-color:rgba(0,0,0,0);
     overflow-x: hidden;
+    max-width: 1440px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
 }
-
-
 
 
 .modal-open{
