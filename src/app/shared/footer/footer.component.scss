@@ -7,7 +7,7 @@ div.footer {
     border-top: 4px solid #FA7902;
     @include flex(center, center);
     overflow-x: hidden;
-    /* padding: 0 100px; */
+    padding: 0 100px;
 
     .logo {
         cursor: pointer;

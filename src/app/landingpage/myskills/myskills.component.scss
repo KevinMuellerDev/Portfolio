@@ -136,6 +136,12 @@ $header-height: 109px;
     }
 }
 
+@media(max-width:1220px){
+    h2{
+        font-size: 72px!important;
+    }
+}
+
 @media(max-width: 1024px) {
     .skills-content {
         flex-direction: column-reverse;
