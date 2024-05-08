@@ -13,7 +13,7 @@ export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes),provideHttpClient(),
     TranslateService,
     TranslateModule.forRoot({
-      defaultLanguage: 'de',
+      defaultLanguage: 'en',
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
