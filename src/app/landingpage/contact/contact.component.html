@@ -46,7 +46,7 @@
                     </div>
                     <div class="checkbox">
                         <input #checkbox="ngModel" [ngModel] name="checkbox" type="checkbox" required>
-                        <span>{{"check_text1" | translate}} <a href="">{{"check_text2" | translate}}</a> {{"check_text3" | translate}}</span>
+                        <span>{{"check_text1" | translate}} <a routerLink="datenschutz">{{"check_text2" | translate}}</a> {{"check_text3" | translate}}</span>
                     </div>
                     <div>
                         <input [disabled]="!checkbox"
