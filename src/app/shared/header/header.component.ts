@@ -34,11 +34,15 @@ export class HeaderComponent {
       setTimeout(() => {
         document.getElementsByTagName('app-root')[0].classList.add('modal-open');
         this.menuGraphic = '/assets/img/icon/close.svg';
+        window.scrollTo({top:0, behavior:"instant"});
+        document.getElementsByTagName('body')[0].classList.add('overflow');
         this.menuOpen = true;
       }, 125);
     } else {
       this.menuOpen = false;
       document.getElementsByTagName('app-root')[0].classList.remove('modal-open');
+      document.getElementsByTagName('body')[0].classList.remove('overflow');
+
       setTimeout(() => {
         this.menuGraphic = '/assets/img/icon/burgermenu.svg';
         document.getElementsByClassName('menulist')[0].classList.add('d-none');

@@ -96,6 +96,10 @@ a{
     color: white;
 }
 
+.overflow{
+    overflow: hidden;
+}
+
 @mixin flex($justify: flex-start, $align: flex-start){
     display: flex;
     justify-content: $justify;

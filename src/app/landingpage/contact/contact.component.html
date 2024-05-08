@@ -29,7 +29,7 @@
                             invalid:(email.invalid && email.touched) || (email.invalid && contactForm.submitted), 
                             valid: (email.valid && email.touched)}" [(ngModel)]="contactData.email" type="email"
                             id="email" name="email" placeholder="{{'email_input' | translate}}" autocomplete="off" required
-                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                            pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
                         @if (!email.valid && email.touched && !email.disabled) {
                         <span>{{"required_mail" | translate}}</span>
                         }
@@ -58,5 +58,5 @@
             </div>
         </div>
     </div>
-    <div id="submitInfo">Thank you for contacting me !</div>
+    <div id="submitInfo" >Thank you for contacting me !</div>
 </div>

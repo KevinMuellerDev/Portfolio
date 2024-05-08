@@ -253,7 +253,7 @@ input:-webkit-autofill:active{
     position: fixed;
     z-index: 1;
     left: 50%;
-    bottom: 50%;
+    bottom: 50vh;
     transform: translateX(-50%);
   }
   
@@ -265,20 +265,20 @@ input:-webkit-autofill:active{
   
   @-webkit-keyframes fadein {
     from {bottom: 0; opacity: 0;}
-    to {bottom: 50%; opacity: 1;}
+    to {bottom: 50vh; opacity: 1;}
   }
   
   @keyframes fadein {
     from {bottom: 0; opacity: 0;}
-    to {bottom: 50%; opacity: 1;}
+    to {bottom: 50vh; opacity: 1;}
   }
   
   @-webkit-keyframes fadeout {
-    from {bottom: 50%; opacity: 1;}
+    from {bottom: 50vh; opacity: 1;}
     to {bottom: 0; opacity: 0;}
   }
   
   @keyframes fadeout {
-    from {bottom: 50%; opacity: 1;}
+    from {bottom: 50vh; opacity: 1;}
     to {bottom: 0; opacity: 0;}
   }
