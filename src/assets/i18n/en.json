@@ -13,7 +13,7 @@
     "skills_text_button": "Get in touch",
     "portfolio_text": "Explore a selection of my work - please feel free to interact with them to get insights of my skills.",
     "join_desc": "Task manager inspired by the Kanban System. Create and organize task using drag and drop functions, assign users and categories. This project was developed by group work.",
-    "pokedex_desc": "Based on the PokéAPI a simple libary that provides and catalogues Pokémon information. A fun project to learn the mechanations of using an API.",
+    "dabubble_desc": "A Slack clone with various functions such as: Login, real-time chat, file uploads, channel creation and changing user data.",
     "halloween_desc": "A simple Jump-and-Run game based on an object-oriented approach. Help Maddy to find coins and arcane orbs to fight against the zombies !",
     "contact_text1": "Got a problem to solve?",
     "contact_text2": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
