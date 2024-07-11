@@ -9,7 +9,7 @@ export class ProjectdataService {
       title: "DA Bubble",
       stack: "Angular | Typescript | SASS | Firebase ",
       description: "dabubble_desc",
-      image: "/assets/img/halloweenphoto.png",
+      image: "/assets/img/dabubble.png",
       liveUrl: "http://dabubble.kevin-mueller-dev.de/",
       githubUrl: "https://github.com/KevinMuellerDev/da-bubble"
 
