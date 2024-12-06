@@ -35,6 +35,21 @@ export class MyskillsComponent {
       title: 'HTML'
     },
     {
+      url: '/assets/img/icon/django.svg',
+      urlMobile: '/assets/img/icon/django.svg',
+      title: 'Django'
+    },
+    {
+      url: '/assets/img/icon/python.svg',
+      urlMobile: '/assets/img/icon/python.svg',
+      title: 'Python'
+    },
+    {
+      url: '/assets/img/icon/css.svg',
+      urlMobile: '/assets/img/icon/cssmobile.svg',
+      title: 'CSS'
+    },
+    {
       url: '/assets/img/icon/firebase.svg',
       urlMobile: '/assets/img/icon/firebasemobile.svg',
       title: 'Firebase'
@@ -43,11 +58,6 @@ export class MyskillsComponent {
       url: '/assets/img/icon/git.svg',
       urlMobile: '/assets/img/icon/gitmobile.svg',
       title: 'GIT'
-    },
-    {
-      url: '/assets/img/icon/css.svg',
-      urlMobile: '/assets/img/icon/cssmobile.svg',
-      title: 'CSS'
     },
     {
       url: '/assets/img/icon/restapi.svg',

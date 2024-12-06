@@ -13,6 +13,7 @@
     "skills_text_button": "Get in touch",
     "portfolio_text": "Explore a selection of my work - please feel free to interact with them to get insights of my skills.",
     "join_desc": "Task manager inspired by the Kanban System. Create and organize task using drag and drop functions, assign users and categories. This project was developed by group work.",
+    "join_backend_desc":"REST API of the Join task manager based on Django and the Django Rest Framework.",
     "dabubble_desc": "A Slack clone with various functions such as: Login, real-time chat, file uploads, channel creation and changing user data. The backend of this project is firebase",
     "halloween_desc": "A simple Jump-and-Run game based on an object-oriented approach. Help Maddy to find coins and arcane orbs to fight against the zombies !",
     "contact_text1": "Got a problem to solve?",
