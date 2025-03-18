@@ -15,6 +15,7 @@
     "join_desc": "Task manager inspired by the Kanban System. Create and organize task using drag and drop functions, assign users and categories. This project was developed by group work.",
     "join_backend_desc":"REST API of the Join task manager based on Django and the Django Rest Framework.",
     "dabubble_desc": "A Slack clone with various functions such as: Login, real-time chat, file uploads, channel creation and changing user data. The backend of this project is firebase",
+    "coderr_desc":"A backend for a service booking website. Here it is possible to register as a business or customer user to book or offer services. With the option to filter for services and manage them as a business user.",
     "halloween_desc": "A simple Jump-and-Run game based on an object-oriented approach. Help Maddy to find coins and arcane orbs to fight against the zombies !",
     "contact_text1": "Got a problem to solve?",
     "contact_text2": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",

@@ -15,6 +15,15 @@ export class ProjectdataService {
 
     },
     {
+      title: "Coderr Backend",
+      stack: "Python | Django | Django Rest Framework",
+      description: "coderr_desc",
+      image: "/assets/img/coderr.png",
+      liveUrl: "http://coderr.kevin-mueller-dev.de/",
+      githubUrl: "https://github.com/KevinMuellerDev/coderr_backend"
+
+    },
+    {
       title: "Join",
       stack: "JavaScript | HTML | CSS",
       description: "join_desc",

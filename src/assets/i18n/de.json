@@ -15,6 +15,7 @@
     "join_desc": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu. Dieses Projekt wurde in Gruppenarbeit entwickelt.",
     "join_backend_desc":"REST API des Join Aufgabenmanagers auf Basis von Django und dem Django Rest Framework.",
     "dabubble_desc": "Ein Slack Clone mit verschiedenen Funktionen wie: Login, Realtime Chat, Datei Uploads, Channel erstellung und ändern der Benutzerdaten.",
+    "coderr_desc":"Ein Backend für eine Dienstleistungsbuchungs Website. Hier besteht die möglichkeit sich als Business- oder Customer-User zu registrieren um Dienstleistungen zu buchen oder anzubieten. Mit der Möglichkeit nach Dienstleistungen zu Filtern und diese auch als Business-User zu managen.",
     "halloween_desc": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Maddy, Münzen und arkane Kugeln zu finden, um gegen die Zombies zu kämpfen!",
     "contact_text1": "Benötigen Sie Hilfe beim Lösen ihrer Aufgabe?",
     "contact_text2": "Es würde mich sehr freuen, Ihr Feedback entgegenzunehmen, Ihre Aufgaben zu verstehen und aktiv an der Umsetzung Ihrer Projekte mitzuwirken.",
