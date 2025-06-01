@@ -1,137 +1,158 @@
-@use'./../../../../styles.scss' as *;
+@use "./../../../../styles.scss" as *;
 
 .project {
-    position: relative;
+  position: relative;
+  @include flex(flex-end, flex-end);
+  gap: 35px;
+  overflow: hidden;
+  z-index: 20;
+
+  .project-picture {
+    width: 100%;
+    max-width: 620px;
+  }
+
+  .project-description {
     @include flex(flex-end, flex-end);
+    flex-direction: column;
     gap: 35px;
-    overflow: hidden;
-    z-index: 20;
+    width: 100%;
+    max-width: 512px;
 
-
-    .project-picture {
-        width: 100%;
-        max-width: 620px;
+    .description-text {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
 
-    .project-description {
-        @include flex(flex-end, flex-end);
-        flex-direction: column;
-        gap: 35px;
-        width: 100%;
-        max-width: 512px;
-
-        .description-text {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        h2 {
-            font-size: 32px;
-            font-weight: 700;
-            color: #FF4747;
-        }
-
-        .techstack {
-            font-size: 23px;
-            font-weight: 400;
-            color: #FA7902;
-        }
-
-        .btn-project {
-            display: flex;
-            gap: 86px;
-            width: 100%;
-            text-wrap: nowrap;
-        }
-    }
-}
-
-.livetest-btn {
-    padding: 15px 30px;
-    background-color: #FF4747;
-    border-radius: 10px;
-    cursor: pointer;
-    transform-origin: top;
-    transition: background-color 75ms ease-in-out;
-    font-size: 23px;
-
-    &:hover {
-        background-color: #FA7902;
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #ff4747;
     }
 
-    &:active {
-        background-color: white;
-        color: black;
-    }
-}
-
-.github-btn {
-    padding: 15px 30px;
-    border: 1px solid #FA7902;
-    border-radius: 10px;
-    cursor: pointer;
-    transform-origin: top;
-    transition: transform 75ms ease-in-out;
-    font-size: 23px;
-
-    &:hover {
-        background-color: #FA7902;
-    }
-
-    &:active {
-        background-color: white;
-        color: black;
-    }
-}
-
-@media(max-width: 1280px) {
-    .project {
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-
-        .project-description {
-            align-items: center;
-        }
-
-        .description-text {
-            align-items: center;
-
-            h2,
-            span {
-                align-self: center;
-                text-align: center;
-            }
-        }
-
-        .btn-project {
-            justify-content: center;
-        }
-    }
-}
-
-@media(max-width:850px) {
-    .project-picture {
-        width: unset !important;
-    }
-
-    .livetest-btn{
-        font-size: 16px;
-    }
-
-    .github-btn{
-        font-size: 16px;
-    }
-}
-
-@media(max-width:460px) {
-    .project-picture img {
-        width: 100%;
+    .techstack {
+      font-size: 23px;
+      font-weight: 400;
+      color: #fa7902;
     }
 
     .btn-project {
-        gap: 24px !important;
+      display: flex;
+      gap: 86px;
+      width: 100%;
+      text-wrap: nowrap;
+
+      .double-repo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        .livetest-btn {
+          width: min-content;
+        }
+        .double-repo {
+          display: flex;
+          gap: 12px;
+          .github-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.livetest-btn {
+  padding: 15px 30px;
+  background-color: #ff4747;
+  border-radius: 10px;
+  cursor: pointer;
+  transform-origin: top;
+  transition: background-color 75ms ease-in-out;
+  font-size: 23px;
+
+  &:hover {
+    background-color: #fa7902;
+  }
+
+  &:active {
+    background-color: white;
+    color: black;
+  }
+}
+
+.github-btn {
+  padding: 15px 30px;
+  border: 1px solid #fa7902;
+  border-radius: 10px;
+  cursor: pointer;
+  transform-origin: top;
+  transition: transform 75ms ease-in-out;
+  font-size: 23px;
+
+  &:hover {
+    background-color: #fa7902;
+  }
+
+  &:active {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media (max-width: 1280px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+    .project-description {
+      align-items: center;
     }
 
+    .description-text {
+      align-items: center;
+
+      h2,
+      span {
+        align-self: center;
+        text-align: center;
+      }
+    }
+
+    .btn-project {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .project-picture {
+    width: unset !important;
+  }
+
+  .livetest-btn {
+    font-size: 16px;
+  }
+
+  .github-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 460px) {
+  .project-picture img {
+    width: 100%;
+  }
+
+  .double-repo-wrapper {
+    flex-direction: column;
+  }
+
+  .btn-project {
+    gap: 24px !important;
+  }
 }
